@@ -1,0 +1,30 @@
+PODS:
+  - KVOController (1.2.0)
+  - Masonry (1.1.0)
+  - PromisesObjC (1.2.12)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+
+DEPENDENCIES:
+  - KVOController
+  - Masonry
+  - PromisesObjC
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - KVOController
+    - Masonry
+    - PromisesObjC
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+
+PODFILE CHECKSUM: 010024eb8c8801e76d6da48891adccbc2b738ad9
+
+COCOAPODS: 1.10.0
