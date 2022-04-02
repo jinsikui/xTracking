@@ -3,18 +3,146 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2DB6B7C79A28153E977DB3BD /* libPods-xTrackingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FD0554BC714C6415B9DCE3 /* libPods-xTrackingTests.a */; };
 		6331E3C427F484F1001DFB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331E3C327F484F1001DFB95 /* AppDelegate.m */; };
-		6331E3CA27F484F1001DFB95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331E3C927F484F1001DFB95 /* ViewController.m */; };
 		6331E3CF27F484F2001DFB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6331E3CE27F484F2001DFB95 /* Assets.xcassets */; };
 		6331E3D227F484F2001DFB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6331E3D027F484F2001DFB95 /* LaunchScreen.storyboard */; };
 		6331E3D527F484F2001DFB95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331E3D427F484F2001DFB95 /* main.m */; };
 		6331E3DF27F484F2001DFB95 /* xTrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331E3DE27F484F2001DFB95 /* xTrackingTests.m */; };
 		6331E3EA27F484F2001DFB95 /* xTrackingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331E3E927F484F2001DFB95 /* xTrackingUITests.m */; };
+		63BCE58927F74A760010961D /* TKPageTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE58727F74A760010961D /* TKPageTracking.m */; };
+		63BCE58A27F74A760010961D /* TKPageTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE58727F74A760010961D /* TKPageTracking.m */; };
+		63BCE58B27F74A760010961D /* TKPageTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE58727F74A760010961D /* TKPageTracking.m */; };
+		63BCE58E27F7541E0010961D /* TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE58C27F7541E0010961D /* TKActionTracking.m */; };
+		63BCE58F27F7541E0010961D /* TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE58C27F7541E0010961D /* TKActionTracking.m */; };
+		63BCE59027F7541E0010961D /* TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE58C27F7541E0010961D /* TKActionTracking.m */; };
+		63BCE5D027F83AC50010961D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59427F83AC50010961D /* MainViewController.m */; };
+		63BCE5D127F83AC50010961D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59427F83AC50010961D /* MainViewController.m */; };
+		63BCE5D227F83AC50010961D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59427F83AC50010961D /* MainViewController.m */; };
+		63BCE5D327F83AC50010961D /* HookIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59827F83AC50010961D /* HookIssues.m */; };
+		63BCE5D427F83AC50010961D /* HookIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59827F83AC50010961D /* HookIssues.m */; };
+		63BCE5D527F83AC50010961D /* HookIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59827F83AC50010961D /* HookIssues.m */; };
+		63BCE5D627F83AC50010961D /* TKExposeContext+TestCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59927F83AC50010961D /* TKExposeContext+TestCode.m */; };
+		63BCE5D727F83AC50010961D /* TKExposeContext+TestCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59927F83AC50010961D /* TKExposeContext+TestCode.m */; };
+		63BCE5D827F83AC50010961D /* TKExposeContext+TestCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59927F83AC50010961D /* TKExposeContext+TestCode.m */; };
+		63BCE5D927F83AC50010961D /* TKActionContext+TestCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59D27F83AC50010961D /* TKActionContext+TestCode.m */; };
+		63BCE5DA27F83AC50010961D /* TKActionContext+TestCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59D27F83AC50010961D /* TKActionContext+TestCode.m */; };
+		63BCE5DB27F83AC50010961D /* TKActionContext+TestCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59D27F83AC50010961D /* TKActionContext+TestCode.m */; };
+		63BCE5DC27F83AC50010961D /* TestClipBoundsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59F27F83AC50010961D /* TestClipBoundsController.m */; };
+		63BCE5DD27F83AC50010961D /* TestClipBoundsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59F27F83AC50010961D /* TestClipBoundsController.m */; };
+		63BCE5DE27F83AC50010961D /* TestClipBoundsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE59F27F83AC50010961D /* TestClipBoundsController.m */; };
+		63BCE5DF27F83AC50010961D /* TestConvertWrongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A227F83AC50010961D /* TestConvertWrongController.m */; };
+		63BCE5E027F83AC50010961D /* TestConvertWrongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A227F83AC50010961D /* TestConvertWrongController.m */; };
+		63BCE5E127F83AC50010961D /* TestConvertWrongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A227F83AC50010961D /* TestConvertWrongController.m */; };
+		63BCE5E227F83AC50010961D /* TestEmptyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A327F83AC50010961D /* TestEmptyController.m */; };
+		63BCE5E327F83AC50010961D /* TestEmptyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A327F83AC50010961D /* TestEmptyController.m */; };
+		63BCE5E427F83AC50010961D /* TestEmptyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A327F83AC50010961D /* TestEmptyController.m */; };
+		63BCE5E527F83AC50010961D /* ClickTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A727F83AC50010961D /* ClickTestTableViewController.m */; };
+		63BCE5E627F83AC50010961D /* ClickTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A727F83AC50010961D /* ClickTestTableViewController.m */; };
+		63BCE5E727F83AC50010961D /* ClickTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5A727F83AC50010961D /* ClickTestTableViewController.m */; };
+		63BCE5E827F83AC50010961D /* TestControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AA27F83AC50010961D /* TestControlsController.m */; };
+		63BCE5E927F83AC50010961D /* TestControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AA27F83AC50010961D /* TestControlsController.m */; };
+		63BCE5EA27F83AC50010961D /* TestControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AA27F83AC50010961D /* TestControlsController.m */; };
+		63BCE5EE27F83AC50010961D /* TestTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AD27F83AC50010961D /* TestTableController.m */; };
+		63BCE5EF27F83AC50010961D /* TestTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AD27F83AC50010961D /* TestTableController.m */; };
+		63BCE5F027F83AC50010961D /* TestTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AD27F83AC50010961D /* TestTableController.m */; };
+		63BCE5F127F83AC50010961D /* TestGoPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AE27F83AC50010961D /* TestGoPageController.m */; };
+		63BCE5F227F83AC50010961D /* TestGoPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AE27F83AC50010961D /* TestGoPageController.m */; };
+		63BCE5F327F83AC50010961D /* TestGoPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5AE27F83AC50010961D /* TestGoPageController.m */; };
+		63BCE5F427F83AC50010961D /* TestPercentageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B127F83AC50010961D /* TestPercentageController.m */; };
+		63BCE5F527F83AC50010961D /* TestPercentageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B127F83AC50010961D /* TestPercentageController.m */; };
+		63BCE5F627F83AC50010961D /* TestPercentageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B127F83AC50010961D /* TestPercentageController.m */; };
+		63BCE5F727F83AC50010961D /* TestScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B227F83AC50010961D /* TestScrollViewController.m */; };
+		63BCE5F827F83AC50010961D /* TestScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B227F83AC50010961D /* TestScrollViewController.m */; };
+		63BCE5F927F83AC50010961D /* TestScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B227F83AC50010961D /* TestScrollViewController.m */; };
+		63BCE5FA27F83AC50010961D /* TestTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B327F83AC50010961D /* TestTabController.m */; };
+		63BCE5FB27F83AC50010961D /* TestTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B327F83AC50010961D /* TestTabController.m */; };
+		63BCE5FC27F83AC50010961D /* TestTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B327F83AC50010961D /* TestTabController.m */; };
+		63BCE5FD27F83AC50010961D /* TestHideAlphaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B427F83AC50010961D /* TestHideAlphaController.m */; };
+		63BCE5FE27F83AC50010961D /* TestHideAlphaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B427F83AC50010961D /* TestHideAlphaController.m */; };
+		63BCE5FF27F83AC50010961D /* TestHideAlphaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B427F83AC50010961D /* TestHideAlphaController.m */; };
+		63BCE60027F83AC50010961D /* TestLabel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B727F83AC50010961D /* TestLabel2.m */; };
+		63BCE60127F83AC50010961D /* TestLabel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B727F83AC50010961D /* TestLabel2.m */; };
+		63BCE60227F83AC50010961D /* TestLabel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B727F83AC50010961D /* TestLabel2.m */; };
+		63BCE60327F83AC50010961D /* TestClickCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B827F83AC50010961D /* TestClickCollectionViewCell.m */; };
+		63BCE60427F83AC50010961D /* TestClickCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B827F83AC50010961D /* TestClickCollectionViewCell.m */; };
+		63BCE60527F83AC50010961D /* TestClickCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5B827F83AC50010961D /* TestClickCollectionViewCell.m */; };
+		63BCE60927F83AC50010961D /* TestLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BA27F83AC50010961D /* TestLabel.m */; };
+		63BCE60A27F83AC50010961D /* TestLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BA27F83AC50010961D /* TestLabel.m */; };
+		63BCE60B27F83AC50010961D /* TestLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BA27F83AC50010961D /* TestLabel.m */; };
+		63BCE60C27F83AC50010961D /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BD27F83AC50010961D /* TestView.m */; };
+		63BCE60D27F83AC50010961D /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BD27F83AC50010961D /* TestView.m */; };
+		63BCE60E27F83AC50010961D /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BD27F83AC50010961D /* TestView.m */; };
+		63BCE60F27F83AC50010961D /* TestLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BE27F83AC50010961D /* TestLayer.m */; };
+		63BCE61027F83AC50010961D /* TestLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BE27F83AC50010961D /* TestLayer.m */; };
+		63BCE61127F83AC50010961D /* TestLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BE27F83AC50010961D /* TestLayer.m */; };
+		63BCE61227F83AC50010961D /* TestClickTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BF27F83AC50010961D /* TestClickTableCell.m */; };
+		63BCE61327F83AC50010961D /* TestClickTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BF27F83AC50010961D /* TestClickTableCell.m */; };
+		63BCE61427F83AC50010961D /* TestClickTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5BF27F83AC50010961D /* TestClickTableCell.m */; };
+		63BCE61527F83AC50010961D /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C327F83AC50010961D /* TestCollectionViewCell.m */; };
+		63BCE61627F83AC50010961D /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C327F83AC50010961D /* TestCollectionViewCell.m */; };
+		63BCE61727F83AC50010961D /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C327F83AC50010961D /* TestCollectionViewCell.m */; };
+		63BCE61827F83AC50010961D /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C427F83AC50010961D /* TestTableCell.m */; };
+		63BCE61927F83AC50010961D /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C427F83AC50010961D /* TestTableCell.m */; };
+		63BCE61A27F83AC50010961D /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C427F83AC50010961D /* TestTableCell.m */; };
+		63BCE61B27F83AC50010961D /* TestLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C727F83AC50010961D /* TestLabelView.m */; };
+		63BCE61C27F83AC50010961D /* TestLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C727F83AC50010961D /* TestLabelView.m */; };
+		63BCE61D27F83AC50010961D /* TestLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5C727F83AC50010961D /* TestLabelView.m */; };
+		63BCE61E27F83AC50010961D /* TestLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5CC27F83AC50010961D /* TestLogger.m */; };
+		63BCE61F27F83AC50010961D /* TestLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5CC27F83AC50010961D /* TestLogger.m */; };
+		63BCE62027F83AC50010961D /* TestLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5CC27F83AC50010961D /* TestLogger.m */; };
+		63BCE62127F83AC50010961D /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5CF27F83AC50010961D /* TestHelper.m */; };
+		63BCE62227F83AC50010961D /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5CF27F83AC50010961D /* TestHelper.m */; };
+		63BCE62327F83AC50010961D /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE5CF27F83AC50010961D /* TestHelper.m */; };
+		63F879E927F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879BE27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m */; };
+		63F879EA27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879BE27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m */; };
+		63F879EB27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879BE27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m */; };
+		63F879EC27F575AA007CAAD0 /* UIApplication+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C027F575AA007CAAD0 /* UIApplication+TKActionTracking.m */; };
+		63F879ED27F575AA007CAAD0 /* UIApplication+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C027F575AA007CAAD0 /* UIApplication+TKActionTracking.m */; };
+		63F879EE27F575AA007CAAD0 /* UIApplication+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C027F575AA007CAAD0 /* UIApplication+TKActionTracking.m */; };
+		63F879EF27F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C127F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m */; };
+		63F879F027F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C127F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m */; };
+		63F879F127F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C127F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m */; };
+		63F879F227F575AA007CAAD0 /* UIView+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C227F575AA007CAAD0 /* UIView+TKActionTracking.m */; };
+		63F879F327F575AA007CAAD0 /* UIView+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C227F575AA007CAAD0 /* UIView+TKActionTracking.m */; };
+		63F879F427F575AA007CAAD0 /* UIView+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C227F575AA007CAAD0 /* UIView+TKActionTracking.m */; };
+		63F879F527F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C327F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m */; };
+		63F879F627F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C327F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m */; };
+		63F879F727F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C327F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m */; };
+		63F879F827F575AA007CAAD0 /* UIView+TKExposeTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C427F575AA007CAAD0 /* UIView+TKExposeTracking.m */; };
+		63F879F927F575AA007CAAD0 /* UIView+TKExposeTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C427F575AA007CAAD0 /* UIView+TKExposeTracking.m */; };
+		63F879FA27F575AA007CAAD0 /* UIView+TKExposeTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C427F575AA007CAAD0 /* UIView+TKExposeTracking.m */; };
+		63F879FB27F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C527F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m */; };
+		63F879FC27F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C527F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m */; };
+		63F879FD27F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C527F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m */; };
+		63F879FE27F575AA007CAAD0 /* UIViewController+TKPageTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C827F575AA007CAAD0 /* UIViewController+TKPageTracking.m */; };
+		63F879FF27F575AA007CAAD0 /* UIViewController+TKPageTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C827F575AA007CAAD0 /* UIViewController+TKPageTracking.m */; };
+		63F87A0027F575AA007CAAD0 /* UIViewController+TKPageTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879C827F575AA007CAAD0 /* UIViewController+TKPageTracking.m */; };
+		63F87A0427F575AA007CAAD0 /* TKClassHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879CE27F575AA007CAAD0 /* TKClassHooker.m */; };
+		63F87A0527F575AA007CAAD0 /* TKClassHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879CE27F575AA007CAAD0 /* TKClassHooker.m */; };
+		63F87A0627F575AA007CAAD0 /* TKClassHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879CE27F575AA007CAAD0 /* TKClassHooker.m */; };
+		63F87A0727F575AA007CAAD0 /* TKActionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879CF27F575AA007CAAD0 /* TKActionHelper.m */; };
+		63F87A0827F575AA007CAAD0 /* TKActionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879CF27F575AA007CAAD0 /* TKActionHelper.m */; };
+		63F87A0927F575AA007CAAD0 /* TKActionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879CF27F575AA007CAAD0 /* TKActionHelper.m */; };
+		63F87A1927F575AA007CAAD0 /* TKPageContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879DD27F575AA007CAAD0 /* TKPageContext.m */; };
+		63F87A1A27F575AA007CAAD0 /* TKPageContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879DD27F575AA007CAAD0 /* TKPageContext.m */; };
+		63F87A1B27F575AA007CAAD0 /* TKPageContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879DD27F575AA007CAAD0 /* TKPageContext.m */; };
+		63F87A1C27F575AA007CAAD0 /* TKExposeTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879E327F575AA007CAAD0 /* TKExposeTracking.m */; };
+		63F87A1D27F575AA007CAAD0 /* TKExposeTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879E327F575AA007CAAD0 /* TKExposeTracking.m */; };
+		63F87A1E27F575AA007CAAD0 /* TKExposeTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F879E327F575AA007CAAD0 /* TKExposeTracking.m */; };
+		63F87A2627F5A770007CAAD0 /* TKActionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A2527F5A770007CAAD0 /* TKActionContext.m */; };
+		63F87A2727F5A770007CAAD0 /* TKActionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A2527F5A770007CAAD0 /* TKActionContext.m */; };
+		63F87A2827F5A770007CAAD0 /* TKActionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A2527F5A770007CAAD0 /* TKActionContext.m */; };
+		63F87A2A27F5A82D007CAAD0 /* TKExposeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A2927F5A82D007CAAD0 /* TKExposeContext.m */; };
+		63F87A2B27F5A82D007CAAD0 /* TKExposeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A2927F5A82D007CAAD0 /* TKExposeContext.m */; };
+		63F87A2C27F5A82D007CAAD0 /* TKExposeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A2927F5A82D007CAAD0 /* TKExposeContext.m */; };
+		63F87A3327F5AFBE007CAAD0 /* TKControllerPageAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A3227F5AFBE007CAAD0 /* TKControllerPageAgent.m */; };
+		63F87A3427F5AFBE007CAAD0 /* TKControllerPageAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A3227F5AFBE007CAAD0 /* TKControllerPageAgent.m */; };
+		63F87A3527F5AFBE007CAAD0 /* TKControllerPageAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F87A3227F5AFBE007CAAD0 /* TKControllerPageAgent.m */; };
 		7F148D966B04FF31D49E9FFE /* libPods-xTrackingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B977E7B8F7FC78552043D92B /* libPods-xTrackingUITests.a */; };
 		D9280ADF76E8D10AB910AA72 /* libPods-xTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2358E7545DDCFDF9DDD7D7 /* libPods-xTracking.a */; };
 /* End PBXBuildFile section */
@@ -41,8 +169,6 @@
 		6331E3BF27F484F1001DFB95 /* xTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6331E3C227F484F1001DFB95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6331E3C327F484F1001DFB95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6331E3C827F484F1001DFB95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6331E3C927F484F1001DFB95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6331E3CE27F484F2001DFB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6331E3D127F484F2001DFB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6331E3D327F484F2001DFB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +180,101 @@
 		6331E3E927F484F2001DFB95 /* xTrackingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xTrackingUITests.m; sourceTree = "<group>"; };
 		6331E3EB27F484F2001DFB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6331E43927F488F1001DFB95 /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
+		6331E44627F49DC9001DFB95 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		6331E44727F49DC9001DFB95 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6331E44827F49DC9001DFB95 /* xTracking.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = xTracking.podspec; sourceTree = "<group>"; };
+		63BCE58727F74A760010961D /* TKPageTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPageTracking.m; sourceTree = "<group>"; };
+		63BCE58827F74A760010961D /* TKPageTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPageTracking.h; sourceTree = "<group>"; };
+		63BCE58C27F7541E0010961D /* TKActionTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKActionTracking.m; sourceTree = "<group>"; };
+		63BCE58D27F7541E0010961D /* TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKActionTracking.h; sourceTree = "<group>"; };
+		63BCE59127F82C910010961D /* xTrackingPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xTrackingPage.h; sourceTree = "<group>"; };
+		63BCE59227F82CAB0010961D /* xTrackingExpose.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xTrackingExpose.h; sourceTree = "<group>"; };
+		63BCE59327F82CBC0010961D /* xTrackingAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xTrackingAction.h; sourceTree = "<group>"; };
+		63BCE59427F83AC50010961D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		63BCE59527F83AC50010961D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		63BCE59827F83AC50010961D /* HookIssues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookIssues.m; sourceTree = "<group>"; };
+		63BCE59927F83AC50010961D /* TKExposeContext+TestCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TKExposeContext+TestCode.m"; sourceTree = "<group>"; };
+		63BCE59A27F83AC50010961D /* TKActionContext+TestCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TKActionContext+TestCode.h"; sourceTree = "<group>"; };
+		63BCE59B27F83AC50010961D /* HookIssues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookIssues.h; sourceTree = "<group>"; };
+		63BCE59C27F83AC50010961D /* TKExposeContext+TestCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TKExposeContext+TestCode.h"; sourceTree = "<group>"; };
+		63BCE59D27F83AC50010961D /* TKActionContext+TestCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TKActionContext+TestCode.m"; sourceTree = "<group>"; };
+		63BCE59F27F83AC50010961D /* TestClipBoundsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClipBoundsController.m; sourceTree = "<group>"; };
+		63BCE5A027F83AC50010961D /* TestControlsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestControlsController.h; sourceTree = "<group>"; };
+		63BCE5A127F83AC50010961D /* TestPercentageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPercentageController.h; sourceTree = "<group>"; };
+		63BCE5A227F83AC50010961D /* TestConvertWrongController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestConvertWrongController.m; sourceTree = "<group>"; };
+		63BCE5A327F83AC50010961D /* TestEmptyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEmptyController.m; sourceTree = "<group>"; };
+		63BCE5A427F83AC50010961D /* TestGoPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGoPageController.h; sourceTree = "<group>"; };
+		63BCE5A527F83AC50010961D /* TestTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableController.h; sourceTree = "<group>"; };
+		63BCE5A627F83AC50010961D /* TestScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScrollViewController.h; sourceTree = "<group>"; };
+		63BCE5A727F83AC50010961D /* ClickTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickTestTableViewController.m; sourceTree = "<group>"; };
+		63BCE5A827F83AC50010961D /* TestHideAlphaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHideAlphaController.h; sourceTree = "<group>"; };
+		63BCE5A927F83AC50010961D /* TestTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTabController.h; sourceTree = "<group>"; };
+		63BCE5AA27F83AC50010961D /* TestControlsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestControlsController.m; sourceTree = "<group>"; };
+		63BCE5AB27F83AC50010961D /* TestClipBoundsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClipBoundsController.h; sourceTree = "<group>"; };
+		63BCE5AD27F83AC50010961D /* TestTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableController.m; sourceTree = "<group>"; };
+		63BCE5AE27F83AC50010961D /* TestGoPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGoPageController.m; sourceTree = "<group>"; };
+		63BCE5AF27F83AC50010961D /* TestEmptyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEmptyController.h; sourceTree = "<group>"; };
+		63BCE5B027F83AC50010961D /* TestConvertWrongController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestConvertWrongController.h; sourceTree = "<group>"; };
+		63BCE5B127F83AC50010961D /* TestPercentageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPercentageController.m; sourceTree = "<group>"; };
+		63BCE5B227F83AC50010961D /* TestScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScrollViewController.m; sourceTree = "<group>"; };
+		63BCE5B327F83AC50010961D /* TestTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTabController.m; sourceTree = "<group>"; };
+		63BCE5B427F83AC50010961D /* TestHideAlphaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHideAlphaController.m; sourceTree = "<group>"; };
+		63BCE5B527F83AC50010961D /* ClickTestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickTestTableViewController.h; sourceTree = "<group>"; };
+		63BCE5B727F83AC50010961D /* TestLabel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLabel2.m; sourceTree = "<group>"; };
+		63BCE5B827F83AC50010961D /* TestClickCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClickCollectionViewCell.m; sourceTree = "<group>"; };
+		63BCE5BA27F83AC50010961D /* TestLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLabel.m; sourceTree = "<group>"; };
+		63BCE5BB27F83AC50010961D /* TestTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableCell.h; sourceTree = "<group>"; };
+		63BCE5BC27F83AC50010961D /* TestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		63BCE5BD27F83AC50010961D /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		63BCE5BE27F83AC50010961D /* TestLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayer.m; sourceTree = "<group>"; };
+		63BCE5BF27F83AC50010961D /* TestClickTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClickTableCell.m; sourceTree = "<group>"; };
+		63BCE5C027F83AC50010961D /* TestLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLabelView.h; sourceTree = "<group>"; };
+		63BCE5C127F83AC50010961D /* TestClickCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClickCollectionViewCell.h; sourceTree = "<group>"; };
+		63BCE5C227F83AC50010961D /* TestLabel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLabel2.h; sourceTree = "<group>"; };
+		63BCE5C327F83AC50010961D /* TestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
+		63BCE5C427F83AC50010961D /* TestTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableCell.m; sourceTree = "<group>"; };
+		63BCE5C527F83AC50010961D /* TestLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLabel.h; sourceTree = "<group>"; };
+		63BCE5C627F83AC50010961D /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		63BCE5C727F83AC50010961D /* TestLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLabelView.m; sourceTree = "<group>"; };
+		63BCE5C827F83AC50010961D /* TestClickTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClickTableCell.h; sourceTree = "<group>"; };
+		63BCE5C927F83AC50010961D /* TestLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayer.h; sourceTree = "<group>"; };
+		63BCE5CB27F83AC50010961D /* TestHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHeaders.h; sourceTree = "<group>"; };
+		63BCE5CC27F83AC50010961D /* TestLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLogger.m; sourceTree = "<group>"; };
+		63BCE5CD27F83AC50010961D /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
+		63BCE5CE27F83AC50010961D /* TestLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLogger.h; sourceTree = "<group>"; };
+		63BCE5CF27F83AC50010961D /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
+		63F879B827F575AA007CAAD0 /* UITabBarItem+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+TKActionTracking.h"; sourceTree = "<group>"; };
+		63F879B927F575AA007CAAD0 /* UIApplication+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TKActionTracking.h"; sourceTree = "<group>"; };
+		63F879BA27F575AA007CAAD0 /* UIView+TKExposeTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKExposeTracking.h"; sourceTree = "<group>"; };
+		63F879BB27F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TKActionTracking.h"; sourceTree = "<group>"; };
+		63F879BC27F575AA007CAAD0 /* UIView+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKActionTracking.h"; sourceTree = "<group>"; };
+		63F879BD27F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+TKActionTracking.h"; sourceTree = "<group>"; };
+		63F879BE27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+TKActionTracking.m"; sourceTree = "<group>"; };
+		63F879BF27F575AA007CAAD0 /* ITKActionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITKActionObject.h; sourceTree = "<group>"; };
+		63F879C027F575AA007CAAD0 /* UIApplication+TKActionTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TKActionTracking.m"; sourceTree = "<group>"; };
+		63F879C127F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+TKActionTracking.m"; sourceTree = "<group>"; };
+		63F879C227F575AA007CAAD0 /* UIView+TKActionTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKActionTracking.m"; sourceTree = "<group>"; };
+		63F879C327F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TKActionTracking.m"; sourceTree = "<group>"; };
+		63F879C427F575AA007CAAD0 /* UIView+TKExposeTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKExposeTracking.m"; sourceTree = "<group>"; };
+		63F879C527F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+TKActionTracking.m"; sourceTree = "<group>"; };
+		63F879C627F575AA007CAAD0 /* UIAlertAction+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+TKActionTracking.h"; sourceTree = "<group>"; };
+		63F879C827F575AA007CAAD0 /* UIViewController+TKPageTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TKPageTracking.m"; sourceTree = "<group>"; };
+		63F879C927F575AA007CAAD0 /* UIViewController+TKPageTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TKPageTracking.h"; sourceTree = "<group>"; };
+		63F879CA27F575AA007CAAD0 /* xTacking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xTacking.h; sourceTree = "<group>"; };
+		63F879CC27F575AA007CAAD0 /* TKActionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKActionHelper.h; sourceTree = "<group>"; };
+		63F879CE27F575AA007CAAD0 /* TKClassHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKClassHooker.m; sourceTree = "<group>"; };
+		63F879CF27F575AA007CAAD0 /* TKActionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKActionHelper.m; sourceTree = "<group>"; };
+		63F879D127F575AA007CAAD0 /* TKClassHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKClassHooker.h; sourceTree = "<group>"; };
+		63F879D527F575AA007CAAD0 /* TKPageContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPageContext.h; sourceTree = "<group>"; };
+		63F879DA27F575AA007CAAD0 /* TKExposeContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKExposeContext.h; sourceTree = "<group>"; };
+		63F879DC27F575AA007CAAD0 /* TKActionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKActionContext.h; sourceTree = "<group>"; };
+		63F879DD27F575AA007CAAD0 /* TKPageContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPageContext.m; sourceTree = "<group>"; };
+		63F879E327F575AA007CAAD0 /* TKExposeTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKExposeTracking.m; sourceTree = "<group>"; };
+		63F879E727F575AA007CAAD0 /* TKExposeTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKExposeTracking.h; sourceTree = "<group>"; };
+		63F87A2527F5A770007CAAD0 /* TKActionContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKActionContext.m; sourceTree = "<group>"; };
+		63F87A2927F5A82D007CAAD0 /* TKExposeContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKExposeContext.m; sourceTree = "<group>"; };
+		63F87A3127F5AFBE007CAAD0 /* TKControllerPageAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKControllerPageAgent.h; sourceTree = "<group>"; };
+		63F87A3227F5AFBE007CAAD0 /* TKControllerPageAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKControllerPageAgent.m; sourceTree = "<group>"; };
 		6A2358E7545DDCFDF9DDD7D7 /* libPods-xTracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-xTracking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3506A52BB313CECAD5C55E /* Pods-xTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xTracking.debug.xcconfig"; path = "Target Support Files/Pods-xTracking/Pods-xTracking.debug.xcconfig"; sourceTree = "<group>"; };
 		89A5099ABC827F0542D9825C /* Pods-xTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xTracking.release.xcconfig"; path = "Target Support Files/Pods-xTracking/Pods-xTracking.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,14 +323,17 @@
 				2DF8112ABDB5CB612C304BA6 /* Pods-xTrackingUITests.debug.xcconfig */,
 				DE992E339BC3E09998F18EA2 /* Pods-xTrackingUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		6331E3B627F484F1001DFB95 = {
 			isa = PBXGroup;
 			children = (
+				6331E44627F49DC9001DFB95 /* CHANGELOG.md */,
+				6331E44727F49DC9001DFB95 /* README.md */,
+				6331E44827F49DC9001DFB95 /* xTracking.podspec */,
 				6331E43927F488F1001DFB95 /* config.xcconfig */,
+				63F879B627F57589007CAAD0 /* Source */,
 				6331E3C127F484F1001DFB95 /* xTracking */,
 				6331E3DD27F484F2001DFB95 /* xTrackingTests */,
 				6331E3E827F484F2001DFB95 /* xTrackingUITests */,
@@ -132,10 +356,11 @@
 		6331E3C127F484F1001DFB95 /* xTracking */ = {
 			isa = PBXGroup;
 			children = (
+				63BCE59627F83AC50010961D /* TestCode */,
+				63BCE59527F83AC50010961D /* MainViewController.h */,
+				63BCE59427F83AC50010961D /* MainViewController.m */,
 				6331E3C227F484F1001DFB95 /* AppDelegate.h */,
 				6331E3C327F484F1001DFB95 /* AppDelegate.m */,
-				6331E3C827F484F1001DFB95 /* ViewController.h */,
-				6331E3C927F484F1001DFB95 /* ViewController.m */,
 				6331E3CE27F484F2001DFB95 /* Assets.xcassets */,
 				6331E3D027F484F2001DFB95 /* LaunchScreen.storyboard */,
 				6331E3D327F484F2001DFB95 /* Info.plist */,
@@ -162,6 +387,174 @@
 			path = xTrackingUITests;
 			sourceTree = "<group>";
 		};
+		63BCE59627F83AC50010961D /* TestCode */ = {
+			isa = PBXGroup;
+			children = (
+				63BCE59727F83AC50010961D /* Models */,
+				63BCE59E27F83AC50010961D /* Controller */,
+				63BCE5B627F83AC50010961D /* Views */,
+				63BCE5CA27F83AC50010961D /* Helpers */,
+			);
+			path = TestCode;
+			sourceTree = "<group>";
+		};
+		63BCE59727F83AC50010961D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63BCE59B27F83AC50010961D /* HookIssues.h */,
+				63BCE59827F83AC50010961D /* HookIssues.m */,
+				63BCE59A27F83AC50010961D /* TKActionContext+TestCode.h */,
+				63BCE59D27F83AC50010961D /* TKActionContext+TestCode.m */,
+				63BCE59C27F83AC50010961D /* TKExposeContext+TestCode.h */,
+				63BCE59927F83AC50010961D /* TKExposeContext+TestCode.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63BCE59E27F83AC50010961D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63BCE5B527F83AC50010961D /* ClickTestTableViewController.h */,
+				63BCE5A727F83AC50010961D /* ClickTestTableViewController.m */,
+				63BCE5AB27F83AC50010961D /* TestClipBoundsController.h */,
+				63BCE59F27F83AC50010961D /* TestClipBoundsController.m */,
+				63BCE5A027F83AC50010961D /* TestControlsController.h */,
+				63BCE5AA27F83AC50010961D /* TestControlsController.m */,
+				63BCE5B027F83AC50010961D /* TestConvertWrongController.h */,
+				63BCE5A227F83AC50010961D /* TestConvertWrongController.m */,
+				63BCE5AF27F83AC50010961D /* TestEmptyController.h */,
+				63BCE5A327F83AC50010961D /* TestEmptyController.m */,
+				63BCE5A427F83AC50010961D /* TestGoPageController.h */,
+				63BCE5AE27F83AC50010961D /* TestGoPageController.m */,
+				63BCE5A827F83AC50010961D /* TestHideAlphaController.h */,
+				63BCE5B427F83AC50010961D /* TestHideAlphaController.m */,
+				63BCE5A127F83AC50010961D /* TestPercentageController.h */,
+				63BCE5B127F83AC50010961D /* TestPercentageController.m */,
+				63BCE5A627F83AC50010961D /* TestScrollViewController.h */,
+				63BCE5B227F83AC50010961D /* TestScrollViewController.m */,
+				63BCE5A927F83AC50010961D /* TestTabController.h */,
+				63BCE5B327F83AC50010961D /* TestTabController.m */,
+				63BCE5A527F83AC50010961D /* TestTableController.h */,
+				63BCE5AD27F83AC50010961D /* TestTableController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63BCE5B627F83AC50010961D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63BCE5C127F83AC50010961D /* TestClickCollectionViewCell.h */,
+				63BCE5B827F83AC50010961D /* TestClickCollectionViewCell.m */,
+				63BCE5C827F83AC50010961D /* TestClickTableCell.h */,
+				63BCE5BF27F83AC50010961D /* TestClickTableCell.m */,
+				63BCE5BC27F83AC50010961D /* TestCollectionViewCell.h */,
+				63BCE5C327F83AC50010961D /* TestCollectionViewCell.m */,
+				63BCE5C527F83AC50010961D /* TestLabel.h */,
+				63BCE5BA27F83AC50010961D /* TestLabel.m */,
+				63BCE5C227F83AC50010961D /* TestLabel2.h */,
+				63BCE5B727F83AC50010961D /* TestLabel2.m */,
+				63BCE5C027F83AC50010961D /* TestLabelView.h */,
+				63BCE5C727F83AC50010961D /* TestLabelView.m */,
+				63BCE5C927F83AC50010961D /* TestLayer.h */,
+				63BCE5BE27F83AC50010961D /* TestLayer.m */,
+				63BCE5BB27F83AC50010961D /* TestTableCell.h */,
+				63BCE5C427F83AC50010961D /* TestTableCell.m */,
+				63BCE5C627F83AC50010961D /* TestView.h */,
+				63BCE5BD27F83AC50010961D /* TestView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63BCE5CA27F83AC50010961D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63BCE5CB27F83AC50010961D /* TestHeaders.h */,
+				63BCE5CD27F83AC50010961D /* TestHelper.h */,
+				63BCE5CF27F83AC50010961D /* TestHelper.m */,
+				63BCE5CE27F83AC50010961D /* TestLogger.h */,
+				63BCE5CC27F83AC50010961D /* TestLogger.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63F879B627F57589007CAAD0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63F87A3027F5AE8A007CAAD0 /* Page */,
+				63F87A2F27F5AE81007CAAD0 /* Expose */,
+				63F87A2E27F5AE78007CAAD0 /* Action */,
+				63F87A2D27F5AE64007CAAD0 /* Overall */,
+				63F879CA27F575AA007CAAD0 /* xTacking.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		63F87A2D27F5AE64007CAAD0 /* Overall */ = {
+			isa = PBXGroup;
+			children = (
+				63F879D127F575AA007CAAD0 /* TKClassHooker.h */,
+				63F879CE27F575AA007CAAD0 /* TKClassHooker.m */,
+			);
+			path = Overall;
+			sourceTree = "<group>";
+		};
+		63F87A2E27F5AE78007CAAD0 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				63F879DC27F575AA007CAAD0 /* TKActionContext.h */,
+				63F87A2527F5A770007CAAD0 /* TKActionContext.m */,
+				63F879CC27F575AA007CAAD0 /* TKActionHelper.h */,
+				63F879CF27F575AA007CAAD0 /* TKActionHelper.m */,
+				63F879BF27F575AA007CAAD0 /* ITKActionObject.h */,
+				63F879C627F575AA007CAAD0 /* UIAlertAction+TKActionTracking.h */,
+				63F879BE27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m */,
+				63F879B927F575AA007CAAD0 /* UIApplication+TKActionTracking.h */,
+				63F879C027F575AA007CAAD0 /* UIApplication+TKActionTracking.m */,
+				63F879BB27F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.h */,
+				63F879C327F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m */,
+				63F879B827F575AA007CAAD0 /* UITabBarItem+TKActionTracking.h */,
+				63F879C127F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m */,
+				63F879BD27F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.h */,
+				63F879C527F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m */,
+				63F879BC27F575AA007CAAD0 /* UIView+TKActionTracking.h */,
+				63F879C227F575AA007CAAD0 /* UIView+TKActionTracking.m */,
+				63BCE58D27F7541E0010961D /* TKActionTracking.h */,
+				63BCE58C27F7541E0010961D /* TKActionTracking.m */,
+				63BCE59327F82CBC0010961D /* xTrackingAction.h */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		63F87A2F27F5AE81007CAAD0 /* Expose */ = {
+			isa = PBXGroup;
+			children = (
+				63F879DA27F575AA007CAAD0 /* TKExposeContext.h */,
+				63F87A2927F5A82D007CAAD0 /* TKExposeContext.m */,
+				63F879BA27F575AA007CAAD0 /* UIView+TKExposeTracking.h */,
+				63F879C427F575AA007CAAD0 /* UIView+TKExposeTracking.m */,
+				63F879E727F575AA007CAAD0 /* TKExposeTracking.h */,
+				63F879E327F575AA007CAAD0 /* TKExposeTracking.m */,
+				63BCE59227F82CAB0010961D /* xTrackingExpose.h */,
+			);
+			path = Expose;
+			sourceTree = "<group>";
+		};
+		63F87A3027F5AE8A007CAAD0 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				63F879D527F575AA007CAAD0 /* TKPageContext.h */,
+				63F879DD27F575AA007CAAD0 /* TKPageContext.m */,
+				63F87A3127F5AFBE007CAAD0 /* TKControllerPageAgent.h */,
+				63F87A3227F5AFBE007CAAD0 /* TKControllerPageAgent.m */,
+				63F879C927F575AA007CAAD0 /* UIViewController+TKPageTracking.h */,
+				63F879C827F575AA007CAAD0 /* UIViewController+TKPageTracking.m */,
+				63BCE58827F74A760010961D /* TKPageTracking.h */,
+				63BCE58727F74A760010961D /* TKPageTracking.m */,
+				63BCE59127F82C910010961D /* xTrackingPage.h */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
 		76C503ED1FDDB3490C82C8F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +576,7 @@
 				6331E3BB27F484F1001DFB95 /* Sources */,
 				6331E3BC27F484F1001DFB95 /* Frameworks */,
 				6331E3BD27F484F1001DFB95 /* Resources */,
+				E4DFF9EAF0F6DFC1E9A40EAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +595,7 @@
 				6331E3D627F484F2001DFB95 /* Sources */,
 				6331E3D727F484F2001DFB95 /* Frameworks */,
 				6331E3D827F484F2001DFB95 /* Resources */,
+				021678E969494A202FA04BE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +615,7 @@
 				6331E3E127F484F2001DFB95 /* Sources */,
 				6331E3E227F484F2001DFB95 /* Frameworks */,
 				6331E3E327F484F2001DFB95 /* Resources */,
+				4AE5FF9D6C9CB32AAD65F1A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,6 +695,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		021678E969494A202FA04BE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xTrackingTests/Pods-xTrackingTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xTrackingTests/Pods-xTrackingTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xTrackingTests/Pods-xTrackingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE5FF9D6C9CB32AAD65F1A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xTrackingUITests/Pods-xTrackingUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xTrackingUITests/Pods-xTrackingUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xTrackingUITests/Pods-xTrackingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		569D0E62FB843289B2389D2C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,6 +795,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E4DFF9EAF0F6DFC1E9A40EAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xTracking/Pods-xTracking-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xTracking/Pods-xTracking-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xTracking/Pods-xTracking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -372,9 +819,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6331E3CA27F484F1001DFB95 /* ViewController.m in Sources */,
+				63F879FE27F575AA007CAAD0 /* UIViewController+TKPageTracking.m in Sources */,
+				63BCE60327F83AC50010961D /* TestClickCollectionViewCell.m in Sources */,
+				63F879EC27F575AA007CAAD0 /* UIApplication+TKActionTracking.m in Sources */,
+				63BCE60F27F83AC50010961D /* TestLayer.m in Sources */,
+				63BCE61227F83AC50010961D /* TestClickTableCell.m in Sources */,
+				63F879EF27F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m in Sources */,
+				63BCE60927F83AC50010961D /* TestLabel.m in Sources */,
+				63BCE58E27F7541E0010961D /* TKActionTracking.m in Sources */,
+				63BCE5D027F83AC50010961D /* MainViewController.m in Sources */,
+				63BCE61827F83AC50010961D /* TestTableCell.m in Sources */,
+				63F879FB27F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m in Sources */,
+				63BCE5DC27F83AC50010961D /* TestClipBoundsController.m in Sources */,
+				63BCE5E527F83AC50010961D /* ClickTestTableViewController.m in Sources */,
+				63BCE5EE27F83AC50010961D /* TestTableController.m in Sources */,
+				63F87A1C27F575AA007CAAD0 /* TKExposeTracking.m in Sources */,
+				63F879E927F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m in Sources */,
+				63F879F227F575AA007CAAD0 /* UIView+TKActionTracking.m in Sources */,
+				63BCE5F127F83AC50010961D /* TestGoPageController.m in Sources */,
+				63F879F527F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m in Sources */,
+				63BCE61527F83AC50010961D /* TestCollectionViewCell.m in Sources */,
 				6331E3C427F484F1001DFB95 /* AppDelegate.m in Sources */,
+				63F87A3327F5AFBE007CAAD0 /* TKControllerPageAgent.m in Sources */,
+				63BCE5F427F83AC50010961D /* TestPercentageController.m in Sources */,
+				63F87A1927F575AA007CAAD0 /* TKPageContext.m in Sources */,
+				63BCE5D627F83AC50010961D /* TKExposeContext+TestCode.m in Sources */,
+				63BCE60C27F83AC50010961D /* TestView.m in Sources */,
+				63BCE5D927F83AC50010961D /* TKActionContext+TestCode.m in Sources */,
+				63BCE5E227F83AC50010961D /* TestEmptyController.m in Sources */,
+				63BCE5FA27F83AC50010961D /* TestTabController.m in Sources */,
+				63BCE5DF27F83AC50010961D /* TestConvertWrongController.m in Sources */,
+				63BCE60027F83AC50010961D /* TestLabel2.m in Sources */,
+				63BCE5D327F83AC50010961D /* HookIssues.m in Sources */,
+				63BCE5FD27F83AC50010961D /* TestHideAlphaController.m in Sources */,
+				63F879F827F575AA007CAAD0 /* UIView+TKExposeTracking.m in Sources */,
+				63BCE61E27F83AC50010961D /* TestLogger.m in Sources */,
+				63BCE61B27F83AC50010961D /* TestLabelView.m in Sources */,
 				6331E3D527F484F2001DFB95 /* main.m in Sources */,
+				63F87A2A27F5A82D007CAAD0 /* TKExposeContext.m in Sources */,
+				63BCE5E827F83AC50010961D /* TestControlsController.m in Sources */,
+				63F87A0727F575AA007CAAD0 /* TKActionHelper.m in Sources */,
+				63F87A2627F5A770007CAAD0 /* TKActionContext.m in Sources */,
+				63F87A0427F575AA007CAAD0 /* TKClassHooker.m in Sources */,
+				63BCE62127F83AC50010961D /* TestHelper.m in Sources */,
+				63BCE58927F74A760010961D /* TKPageTracking.m in Sources */,
+				63BCE5F727F83AC50010961D /* TestScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +871,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F879FC27F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m in Sources */,
+				63BCE5DD27F83AC50010961D /* TestClipBoundsController.m in Sources */,
+				63BCE60127F83AC50010961D /* TestLabel2.m in Sources */,
+				63BCE5F227F83AC50010961D /* TestGoPageController.m in Sources */,
+				63F87A1D27F575AA007CAAD0 /* TKExposeTracking.m in Sources */,
+				63F87A3427F5AFBE007CAAD0 /* TKControllerPageAgent.m in Sources */,
+				63F87A2727F5A770007CAAD0 /* TKActionContext.m in Sources */,
 				6331E3DF27F484F2001DFB95 /* xTrackingTests.m in Sources */,
+				63BCE5E927F83AC50010961D /* TestControlsController.m in Sources */,
+				63BCE58F27F7541E0010961D /* TKActionTracking.m in Sources */,
+				63BCE5F827F83AC50010961D /* TestScrollViewController.m in Sources */,
+				63BCE5E027F83AC50010961D /* TestConvertWrongController.m in Sources */,
+				63BCE5D127F83AC50010961D /* MainViewController.m in Sources */,
+				63BCE5FE27F83AC50010961D /* TestHideAlphaController.m in Sources */,
+				63BCE61927F83AC50010961D /* TestTableCell.m in Sources */,
+				63F87A2B27F5A82D007CAAD0 /* TKExposeContext.m in Sources */,
+				63BCE62227F83AC50010961D /* TestHelper.m in Sources */,
+				63F87A0827F575AA007CAAD0 /* TKActionHelper.m in Sources */,
+				63BCE5DA27F83AC50010961D /* TKActionContext+TestCode.m in Sources */,
+				63BCE5E627F83AC50010961D /* ClickTestTableViewController.m in Sources */,
+				63BCE60D27F83AC50010961D /* TestView.m in Sources */,
+				63F879F327F575AA007CAAD0 /* UIView+TKActionTracking.m in Sources */,
+				63F87A0527F575AA007CAAD0 /* TKClassHooker.m in Sources */,
+				63BCE5FB27F83AC50010961D /* TestTabController.m in Sources */,
+				63BCE61327F83AC50010961D /* TestClickTableCell.m in Sources */,
+				63F879F027F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m in Sources */,
+				63BCE61027F83AC50010961D /* TestLayer.m in Sources */,
+				63BCE60427F83AC50010961D /* TestClickCollectionViewCell.m in Sources */,
+				63BCE5D427F83AC50010961D /* HookIssues.m in Sources */,
+				63F879FF27F575AA007CAAD0 /* UIViewController+TKPageTracking.m in Sources */,
+				63F879F627F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m in Sources */,
+				63BCE5EF27F83AC50010961D /* TestTableController.m in Sources */,
+				63F879F927F575AA007CAAD0 /* UIView+TKExposeTracking.m in Sources */,
+				63BCE58A27F74A760010961D /* TKPageTracking.m in Sources */,
+				63BCE61F27F83AC50010961D /* TestLogger.m in Sources */,
+				63BCE61627F83AC50010961D /* TestCollectionViewCell.m in Sources */,
+				63F87A1A27F575AA007CAAD0 /* TKPageContext.m in Sources */,
+				63F879ED27F575AA007CAAD0 /* UIApplication+TKActionTracking.m in Sources */,
+				63BCE5E327F83AC50010961D /* TestEmptyController.m in Sources */,
+				63F879EA27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m in Sources */,
+				63BCE5D727F83AC50010961D /* TKExposeContext+TestCode.m in Sources */,
+				63BCE60A27F83AC50010961D /* TestLabel.m in Sources */,
+				63BCE5F527F83AC50010961D /* TestPercentageController.m in Sources */,
+				63BCE61C27F83AC50010961D /* TestLabelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +922,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F879FD27F575AA007CAAD0 /* UIGestureRecognizer+TKActionTracking.m in Sources */,
+				63BCE5DE27F83AC50010961D /* TestClipBoundsController.m in Sources */,
+				63BCE60227F83AC50010961D /* TestLabel2.m in Sources */,
+				63BCE5F327F83AC50010961D /* TestGoPageController.m in Sources */,
+				63F87A1E27F575AA007CAAD0 /* TKExposeTracking.m in Sources */,
+				63F87A3527F5AFBE007CAAD0 /* TKControllerPageAgent.m in Sources */,
+				63F87A2827F5A770007CAAD0 /* TKActionContext.m in Sources */,
 				6331E3EA27F484F2001DFB95 /* xTrackingUITests.m in Sources */,
+				63BCE5EA27F83AC50010961D /* TestControlsController.m in Sources */,
+				63BCE59027F7541E0010961D /* TKActionTracking.m in Sources */,
+				63BCE5F927F83AC50010961D /* TestScrollViewController.m in Sources */,
+				63BCE5E127F83AC50010961D /* TestConvertWrongController.m in Sources */,
+				63BCE5D227F83AC50010961D /* MainViewController.m in Sources */,
+				63BCE5FF27F83AC50010961D /* TestHideAlphaController.m in Sources */,
+				63BCE61A27F83AC50010961D /* TestTableCell.m in Sources */,
+				63F87A2C27F5A82D007CAAD0 /* TKExposeContext.m in Sources */,
+				63BCE62327F83AC50010961D /* TestHelper.m in Sources */,
+				63F87A0927F575AA007CAAD0 /* TKActionHelper.m in Sources */,
+				63BCE5DB27F83AC50010961D /* TKActionContext+TestCode.m in Sources */,
+				63BCE5E727F83AC50010961D /* ClickTestTableViewController.m in Sources */,
+				63BCE60E27F83AC50010961D /* TestView.m in Sources */,
+				63F879F427F575AA007CAAD0 /* UIView+TKActionTracking.m in Sources */,
+				63F87A0627F575AA007CAAD0 /* TKClassHooker.m in Sources */,
+				63BCE5FC27F83AC50010961D /* TestTabController.m in Sources */,
+				63BCE61427F83AC50010961D /* TestClickTableCell.m in Sources */,
+				63F879F127F575AA007CAAD0 /* UITabBarItem+TKActionTracking.m in Sources */,
+				63BCE61127F83AC50010961D /* TestLayer.m in Sources */,
+				63BCE60527F83AC50010961D /* TestClickCollectionViewCell.m in Sources */,
+				63BCE5D527F83AC50010961D /* HookIssues.m in Sources */,
+				63F87A0027F575AA007CAAD0 /* UIViewController+TKPageTracking.m in Sources */,
+				63F879F727F575AA007CAAD0 /* UIBarButtonItem+TKActionTracking.m in Sources */,
+				63BCE5F027F83AC50010961D /* TestTableController.m in Sources */,
+				63F879FA27F575AA007CAAD0 /* UIView+TKExposeTracking.m in Sources */,
+				63BCE58B27F74A760010961D /* TKPageTracking.m in Sources */,
+				63BCE62027F83AC50010961D /* TestLogger.m in Sources */,
+				63BCE61727F83AC50010961D /* TestCollectionViewCell.m in Sources */,
+				63F87A1B27F575AA007CAAD0 /* TKPageContext.m in Sources */,
+				63F879EE27F575AA007CAAD0 /* UIApplication+TKActionTracking.m in Sources */,
+				63BCE5E427F83AC50010961D /* TestEmptyController.m in Sources */,
+				63F879EB27F575AA007CAAD0 /* UIAlertAction+TKActionTracking.m in Sources */,
+				63BCE5D827F83AC50010961D /* TKExposeContext+TestCode.m in Sources */,
+				63BCE60B27F83AC50010961D /* TestLabel.m in Sources */,
+				63BCE5F627F83AC50010961D /* TestPercentageController.m in Sources */,
+				63BCE61D27F83AC50010961D /* TestLabelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

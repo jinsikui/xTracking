@@ -18,29 +18,22 @@ Pod::Spec.new do |s|
   s.author           = { 'jinsikui' => '1811652374@qq.com' }
   s.source           = { :git => 'https://github.com/jinsikui/xTracking.git'}
   s.ios.deployment_target = '9.0'
-  s.source_files = 'Source/*'
-  s.resource_bundles = {
-      'sTracking' => ['Source/Assets/*']
-  }
-  s.subspec 'Headers' do |sh|
-    sh.source_files = 'Source/Headers/*'
-  end
-  s.subspec 'Helpers' do |sp|
-    sp.source_files = 'Source/Helpers/*'
-  end
-  s.subspec 'Models' do |sm|
-    sm.source_files = 'Source/Models/*'
-  end
-  s.subspec 'Services' do |ss|
-    ss.source_files = 'Source/Services/*'
-  end
-  s.subspec 'Views' do |sv|
-    sv.source_files = 'Source/Views/*'
-  end
-  s.subspec 'ViewControllers' do |svc|
-    svc.source_files = 'Source/ViewControllers/*'
-  end
+  s.source_files = 'Source/Overall/*'
+  s.public_header_files = 'Source/xTracking.h'
   s.frameworks = 'UIKit', 'Foundation'
-  s.dependency 'KVOController'
-  s.dependency 'PromisesObjC'
+  s.subspec 'Page' do |sp|
+      sp.source_files = 'Source/Page/*'
+      sp.public_header_files = 'Source/Page/xTrackingPage.h
+  end
+  s.subspec 'Expose' do |se|
+      se.source_files = 'Source/Expose/*'
+      se.public_header_files = 'Source/Expose/xTrackingExpose.h
+      se.dependency 'KVOController'
+  end
+  s.subspec 'Action' do |sa|
+      sa.source_files = 'Source/Action/*'
+      sa.public_header_files = 'Source/Action/xTrackingAction.h
+  end
+  
+  
 end
