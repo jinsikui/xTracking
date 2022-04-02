@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'xTracking'
-  s.version          = '1.0.0.1'
+  s.version          = '1.0.0.2'
   s.summary          = 'xTracking'
   s.description      = <<-DESC
     本项目可实现UIKit控件的点击 & 曝光自动跟踪功能
