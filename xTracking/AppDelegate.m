@@ -24,6 +24,12 @@ void uncaughtExceptionHandler(NSException *exception) {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
     [self.window makeKeyAndVisible];
+    
+    [TKPageTracking.shared registPageEventLifeIndicator:self handler:^(TKPageEvent event, TKPageContext * _Nonnull page) {
+        NSString *logContent = [NSString stringWithFormat:@"**** 页面打点 %@", page.pageId];
+        NSLog(@"%@", logContent);
+    }];
+    
     [TKExposeTracking.shared registExposeEventLifeIndicator:self handler:^(UIView * _Nonnull view, TKExposeContext * _Nonnull expose, BOOL isInBackground) {
         NSString *logContent = [NSString stringWithFormat:@"**** 曝光打点 %@", expose];
         NSLog(@"%@", logContent);

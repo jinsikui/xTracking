@@ -58,7 +58,7 @@ pod 'xTracking/Action',     :git => "https://github.com/jinsikui/xTracking.git",
 
 下载本工程直接运行即可查看demo
 
-<img src="/Readme/demo.png" alt="drawing" width="400"/>
+<img src="/Readme/demo.png" alt="drawing" width="350"/>
 
 
 ### <a name="page"></a>页面进出跟踪
@@ -78,9 +78,31 @@ pod 'xTracking/Action',     :git => "https://github.com/jinsikui/xTracking.git",
 // in controller
 // 在viewWillAppear之前调用
 self.tk_page = [[TKPageContext alloc] initWithPageId:@"xxx" userData:nil];
+
+// 也可以这样声明controller和page的一一对应关系：
+[TKPageTracking.shared registPageContext:[[TKPageContext alloc] initWithPageId:@"udeskPageId" userData:nil] forControllerClassName:@"UdeskBaseNavigationViewController"];
 ```
 #### <a name="pageagent"></a> - 一个controller对应多页面
 ```objc
+/***
+    每一个controller都会通过runtime注入一个pageAgent（TKControllerPageAgent）用于管理controller和日志抽象page（TKPageContext）的关系，在恰当的时候发送page的entry/exit事件
+
+    controller和page有一对一和一对多的关系，默认情况下一个controller对应一个page（controller.tk_pageAgent.mode = TKControllerPageModeBindToController）
+    但有时候一个controller中会有多个page，比如FlutterViewController，H5ViewController，或者在同一个controller中滑动切换view每个view对应一个page
+    一对多时一个controller对应多个page，这时又有两种情况
+    1. push/pop模式（controller.tk_pageAgent.mode = TKControllerPageModePushPop）
+       比如FlutterViewController，内部子页面对应page，子页面push/pop时通过bridge通知上层，业务代码应该在bridge代码中调用pageAgent.push(page)或pageAgent.pop()，以此通知xTracking有新页面进入或者离开
+    2. override模式（controller.tk_pageAgent.mode = TKControllerPageModeOverride）
+       比如H5ViewController，当一个新的url加载时意味着覆盖旧的page，此时业务代码应该调用pageAgent.push(page)方法，不需要调用pageAgent.pop()
+    补充一点，无论哪种情况，当controller收到系统的appear/disapper事件时xTracking都会自动对当前page发送entry/exit事件
+**/
+
+// in  WebViewController.viewDidLoad()
+self.tk_pageAgent.mode = TKControllerPageModeOverride;
+
+// 当新的url加载后调用：
+[self.tk_pageAgent push:[[TKPageContext alloc] initWithPageId:"h5page" userData:url];
+
 ```
 ### <a name="expose"></a>UI曝光跟踪
 

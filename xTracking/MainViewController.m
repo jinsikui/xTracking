@@ -42,7 +42,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
-    
     [self setupUI];
 }
 
