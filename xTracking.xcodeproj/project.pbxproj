@@ -243,7 +243,7 @@
 		63BCE5CD27F83AC50010961D /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		63BCE5CE27F83AC50010961D /* TestLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLogger.h; sourceTree = "<group>"; };
 		63BCE5CF27F83AC50010961D /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
-		63BFB3C027F9753000372284 /* demo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpeg; sourceTree = "<group>"; };
+		63BFB3C027F9753000372284 /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
 		63F879B827F575AA007CAAD0 /* UITabBarItem+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+TKActionTracking.h"; sourceTree = "<group>"; };
 		63F879B927F575AA007CAAD0 /* UIApplication+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TKActionTracking.h"; sourceTree = "<group>"; };
 		63F879BA27F575AA007CAAD0 /* UIView+TKExposeTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKExposeTracking.h"; sourceTree = "<group>"; };
@@ -482,7 +482,7 @@
 		63BFB3BF27F974FE00372284 /* Readme */ = {
 			isa = PBXGroup;
 			children = (
-				63BFB3C027F9753000372284 /* demo.jpeg */,
+				63BFB3C027F9753000372284 /* demo.png */,
 			);
 			path = Readme;
 			sourceTree = "<group>";
