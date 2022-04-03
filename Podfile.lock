@@ -1,24 +1,18 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -31,12 +25,12 @@ PODS:
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
   - SocketRocket (0.5.1)
-  - xNavigate (2.0.0.0):
-    - AFNetworking
+  - xNavigate (2.1.0.0):
+    - AFNetworking (~> 4.0.0)
     - Masonry
-    - xNavigate/Navigation (= 2.0.0.0)
-  - xNavigate/Navigation (2.0.0.0):
-    - AFNetworking
+    - xNavigate/Navigation (= 2.1.0.0)
+  - xNavigate/Navigation (2.1.0.0):
+    - AFNetworking (~> 4.0.0)
     - Masonry
   - xUI (2.0.0.0):
     - KVOController
@@ -72,26 +66,26 @@ PODS:
     - MJRefresh
     - PromisesObjC
     - SDWebImage
-  - xUtil (2.0.0.1):
-    - AFNetworking (~> 2.6.3)
+  - xUtil (2.1.0.0):
+    - AFNetworking (~> 4.0.0)
     - FMDB
     - KVOController
     - PromisesObjC
     - SDWebImage
     - SocketRocket
-    - xUtil/Helpers (= 2.0.0.1)
-    - xUtil/Services (= 2.0.0.1)
+    - xUtil/Helpers (= 2.1.0.0)
+    - xUtil/Services (= 2.1.0.0)
     - YYText
-  - xUtil/Helpers (2.0.0.1):
-    - AFNetworking (~> 2.6.3)
+  - xUtil/Helpers (2.1.0.0):
+    - AFNetworking (~> 4.0.0)
     - FMDB
     - KVOController
     - PromisesObjC
     - SDWebImage
     - SocketRocket
     - YYText
-  - xUtil/Services (2.0.0.1):
-    - AFNetworking (~> 2.6.3)
+  - xUtil/Services (2.1.0.0):
+    - AFNetworking (~> 4.0.0)
     - FMDB
     - KVOController
     - PromisesObjC
@@ -106,9 +100,9 @@ DEPENDENCIES:
   - Masonry
   - PromisesObjC
   - SDWebImage
-  - xNavigate (from `https://github.com/jinsikui/xNavigate.git`, tag `v2.0.0-0`)
+  - xNavigate (from `https://github.com/jinsikui/xNavigate.git`, tag `v2.1.0-0`)
   - xUI (from `https://github.com/jinsikui/xUI.git`, tag `v2.0.0-0`)
-  - xUtil (from `https://github.com/jinsikui/xUtil.git`, tag `v2.0.0-1`)
+  - xUtil (from `https://github.com/jinsikui/xUtil.git`, tag `v2.1.0-0`)
   - YYCache
 
 SPEC REPOS:
@@ -127,27 +121,27 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   xNavigate:
     :git: https://github.com/jinsikui/xNavigate.git
-    :tag: v2.0.0-0
+    :tag: v2.1.0-0
   xUI:
     :git: https://github.com/jinsikui/xUI.git
     :tag: v2.0.0-0
   xUtil:
     :git: https://github.com/jinsikui/xUtil.git
-    :tag: v2.0.0-1
+    :tag: v2.1.0-0
 
 CHECKOUT OPTIONS:
   xNavigate:
     :git: https://github.com/jinsikui/xNavigate.git
-    :tag: v2.0.0-0
+    :tag: v2.1.0-0
   xUI:
     :git: https://github.com/jinsikui/xUI.git
     :tag: v2.0.0-0
   xUtil:
     :git: https://github.com/jinsikui/xUtil.git
-    :tag: v2.0.0-1
+    :tag: v2.1.0-0
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -155,12 +149,12 @@ SPEC CHECKSUMS:
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
-  xNavigate: 1e954f7249f495db9b03cca9318938894fe52698
+  xNavigate: b1d65934b842c32c38f71bc74d689f0f5a665cc7
   xUI: 118ea6d74388c2e7c2f6f574a7cfa071a56f0e23
-  xUtil: 5f525570aa6b4348eb21c4e976d92bfc66f54e7d
+  xUtil: 422ef230dc046aff1b8dc860569761dfc5ece880
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 4f31b688109bade01d499c9465acde8a60d52fc0
+PODFILE CHECKSUM: 5f8a45f1fec06d30c974e1db70cbc354e96f93a6
 
 COCOAPODS: 1.10.0
