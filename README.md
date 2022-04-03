@@ -107,7 +107,7 @@ self.tk_pageAgent.mode = TKControllerPageModeOverride;
 ### <a name="expose"></a>UI曝光跟踪
 ```
 “曝光(expose)”指的是某个UI界面从不可见变为可见，跟踪的某个UI界面每次从不可见变为可见触发一次曝光事件
-xTracking支持跟踪任何UIView子类的曝光，只要通过设置UIView.tk_exposeContext 属性声明要求跟踪即可。具体的说，支持以下Features：
+xTracking支持跟踪任何UIView子类的曝光，只要通过设置UIView.tk_exposeContext 属性声明要求跟踪即可。具体的说，支持以下features：
 
 支持设置frame布局或者autolayout布局
 支持UITableViewCell / UICollectionViewCell等可重用组件的曝光跟踪
@@ -116,6 +116,7 @@ xTracking支持跟踪任何UIView子类的曝光，只要通过设置UIView.tk_e
 支持UIView animation导致的UI曝光事件
 支持设置最小曝光比例（即view在window中显示的区域超过自身面积比例多少才算作一次曝光）
 支持view以及superview的alpha，hidden，clipToBounds属性改变导致的曝光事件
+......
 不支持兄弟view的遮挡导致的曝光改变
 ```
 
@@ -158,6 +159,7 @@ view.tk_exposeContext = [[TKExpose alloc] initWithTrackingId:@"xxx" userData:nil
 
 #### <a name="actionregist"></a> - 注册事件回调
 ```objc
+// in AppDelegate.m
 [TKActionTracking.shared registActionEventLifeIndicator:self handler:^(id  _Nonnull sender, TKActionContext * _Nonnull action) {
     NSString *trackingId = action.trackingId; //用户声明的trackingId
     id userData = action.userData; //用户声明的业务数据
@@ -170,6 +172,11 @@ view.tk_exposeContext = [[TKExpose alloc] initWithTrackingId:@"xxx" userData:nil
 // UIButton
 UIButton *btn = ...
 btn.tk_actionContext = [[TKActionContext alloc] initWithTrackingId:@"xxx" userData:nil];
+
+// 如果需要在点击发生时才生成action数据，也可以使用tk_actionProvider:
+btn.tk_actionContextProvider = ^TKActionContext * _Nullable(id<ITKActionObject>  _Nonnull actionObject) {
+    return [[TKActionContext alloc] initWithTrackingId:@"xxx" userData:nil];
+};
 
 // gesture recognizer
 UIView *view = [UIView new];
