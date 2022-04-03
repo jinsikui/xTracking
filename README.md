@@ -62,6 +62,7 @@ pod 'xTracking/Action',     :git => "https://github.com/jinsikui/xTracking.git",
 
 
 ### <a name="page"></a>页面进出跟踪
+[回顶](#top)
 
 #### <a name="pageregist"></a> - 注册事件回调
 ```objc
@@ -105,6 +106,7 @@ self.tk_pageAgent.mode = TKControllerPageModeOverride;
 
 ```
 ### <a name="expose"></a>UI曝光跟踪
+[回顶](#top)
 ```
 “曝光(expose)”指的是某个UI界面从不可见变为可见，跟踪的某个UI界面每次从不可见变为可见触发一次曝光事件
 xTracking支持跟踪任何UIView子类的曝光，只要通过设置UIView.tk_exposeContext 属性声明要求跟踪即可。具体的说，支持以下features：
@@ -152,6 +154,7 @@ view.tk_exposeContext = [[TKExpose alloc] initWithTrackingId:@"xxx" userData:nil
 }
 ```
 ### <a name="action"></a>Action跟踪
+[回顶](#top)
 ```
 "Action"指用户触发的UI控件的事件，xTracking支持大部分UIControl控件的action跟踪
 特别的支持UIBarButtonItem、UIGestureRecognizer触发的action
