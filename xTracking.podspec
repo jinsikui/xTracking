@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   
   s.source_files = 'Source/*'
-  s.public_header_files = 'Source/xTracking.h'
   
   s.subspec 'Overall' do |all|
     all.source_files = 'Source/Overall/*'
@@ -30,20 +29,17 @@ Pod::Spec.new do |s|
   s.subspec 'Page' do |sp|
     sp.source_files = 'Source/Page/*'
     sp.dependency 'xTracking/Overall'
-    sp.public_header_files = 'Source/Page/xTrackingPage.h'
   end
   
   s.subspec 'Expose' do |se|
     se.source_files = 'Source/Expose/*'
     se.dependency 'xTracking/Overall'
     se.dependency 'KVOController'
-    se.public_header_files = 'Source/Expose/xTrackingExpose.h'
   end
   
   s.subspec 'Action' do |sa|
     sa.source_files = 'Source/Action/*'
     sa.dependency 'xTracking/Overall'
-    sa.public_header_files = 'Source/Action/xTrackingAction.h'
   end
   
 end
