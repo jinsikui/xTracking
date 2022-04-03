@@ -58,6 +58,8 @@ pod 'xTracking/Action',     :git => "https://github.com/jinsikui/xTracking.git",
 
 下载本工程直接运行即可查看demo
 
+![Alt text](/Readme/demo.jpeg)
+
 
 ### <a name="page"></a>页面进出跟踪
 

@@ -243,6 +243,7 @@
 		63BCE5CD27F83AC50010961D /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		63BCE5CE27F83AC50010961D /* TestLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLogger.h; sourceTree = "<group>"; };
 		63BCE5CF27F83AC50010961D /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
+		63BFB3C027F9753000372284 /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
 		63F879B827F575AA007CAAD0 /* UITabBarItem+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+TKActionTracking.h"; sourceTree = "<group>"; };
 		63F879B927F575AA007CAAD0 /* UIApplication+TKActionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TKActionTracking.h"; sourceTree = "<group>"; };
 		63F879BA27F575AA007CAAD0 /* UIView+TKExposeTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKExposeTracking.h"; sourceTree = "<group>"; };
@@ -333,6 +334,7 @@
 				6331E44727F49DC9001DFB95 /* README.md */,
 				6331E44827F49DC9001DFB95 /* xTracking.podspec */,
 				6331E43927F488F1001DFB95 /* config.xcconfig */,
+				63BFB3BF27F974FE00372284 /* Readme */,
 				63F879B627F57589007CAAD0 /* Source */,
 				6331E3C127F484F1001DFB95 /* xTracking */,
 				6331E3DD27F484F2001DFB95 /* xTrackingTests */,
@@ -475,6 +477,14 @@
 				63BCE5CC27F83AC50010961D /* TestLogger.m */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63BFB3BF27F974FE00372284 /* Readme */ = {
+			isa = PBXGroup;
+			children = (
+				63BFB3C027F9753000372284 /* demo.png */,
+			);
+			path = Readme;
 			sourceTree = "<group>";
 		};
 		63F879B627F57589007CAAD0 /* Source */ = {
