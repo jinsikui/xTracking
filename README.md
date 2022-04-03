@@ -23,14 +23,14 @@ iOS app 自动跟踪软件，包含页面进出跟踪，UI曝光跟踪，用户A
 通过pod引用，在podfile增加下面一行，通过tag指定版本，可以按需要单独引入子模块
 ```
 # 引入所有模块
-pod 'xTracking',     :git => "https://github.com/jinsikui/xTracking.git", :tag => 'v1.1.0-0'
+pod 'xTracking',     :git => "https://github.com/jinsikui/xTracking.git", :tag => 'vX.X.X-X'
 
 # 单独引入页面跟踪模块
-pod 'xTracking/Page',     :git => "https://github.com/jinsikui/xTracking.git", :tag => 'v1.1.0-0'
+pod 'xTracking/Page',     :git => "https://github.com/jinsikui/xTracking.git", :tag => 'vX.X.X-X'
 # 单独引入UI曝光跟踪模块
-pod 'xTracking/Expose',     :git => "https://github.com/jinsikui/xTracking.git", :tag => 'v1.1.0-0'
+pod 'xTracking/Expose',     :git => "https://github.com/jinsikui/xTracking.git", :tag => 'vX.X.X-X'
 # 单独引入Action跟踪模块
-pod 'xTracking/Action',     :git => "https://github.com/jinsikui/xTracking.git", :tag => 'v1.1.0-0'
+pod 'xTracking/Action',     :git => "https://github.com/jinsikui/xTracking.git", :tag => 'vX.X.X-X'
 ```
  objc代码中引入：
 ```
