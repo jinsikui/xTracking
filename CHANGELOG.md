@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0-0](https://github.com/jinsikui/xTracking/compare/v2.0.0-0...v2.1.0-0) (2022-04-03)
+
+
+### Features
+
+* up demo afnetworking version ([06e4c88](https://github.com/jinsikui/xTracking/commit/06e4c88deccb75923515a142db03780833d60def))
+
 ## [2.0.0-0](https://github.com/jinsikui/xTracking/compare/v1.1.0-0...v2.0.0-0) (2022-04-03)
 
 
