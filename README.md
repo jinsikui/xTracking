@@ -58,15 +58,44 @@ pod 'xTracking/Action',     :git => "https://github.com/jinsikui/xTracking.git",
 
 下载本工程直接运行即可查看demo
 
-![Alt text](/Readme/demo.jpeg)
+<img src="/Readme/demo.png" alt="drawing" width="400"/>
 
 
 ### <a name="page"></a>页面进出跟踪
 
-
+#### <a name="pageregist"></a> - 注册事件回调
+```objc
+// in AppDelegate.m
+[TKPageTracking.shared registPageEventLifeIndicator:self handler:^(TKPageEvent event, TKPageContext * _Nonnull page) {
+    // event would be TKPageEventEntry or TKPageEventExit
+    NSString *pageId = page.pageId; //用户声明的pageId
+    id userData = page.userData; //用户声明的业务数据
+    // do business logic ...
+}];
+```
+#### <a name="pagecontroller"></a> - 声明controller对应的页面
+```objc
+// in controller
+// 在viewWillAppear之前调用
+self.tk_page = [[TKPageContext alloc] initWithPageId:@"xxx" userData:nil];
+```
+#### <a name="pageagent"></a> - 一个controller对应多页面
+```objc
+```
 ### <a name="expose"></a>UI曝光跟踪
 
-
+#### <a name="exposeregist"></a> - 注册事件回调和启动跟踪
+```objc
+```
+#### <a name="exposedeclare"></a> - 给UIView添加曝光跟踪
+```objc
+```
 ### <a name="action"></a>Action跟踪
 
+#### <a name="actionregist"></a> - 注册事件回调
+```objc
+```
+#### <a name="actiondeclare"></a> - 给控件添加Action跟踪
+```objc
+```
 
